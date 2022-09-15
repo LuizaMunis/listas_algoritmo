@@ -1,0 +1,9 @@
+#include<math.h>//Biblioteca matematica
+#define PI 3.1 //Constante
+int main(){
+float area, raio;
+printf("Digite o valor de raio")
+scanf("%f",&raio);
+area = PI * pow(raio,2)// pow função matematica de PI
+printf("Area:%f", area);
+}
