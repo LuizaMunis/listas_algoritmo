@@ -1,0 +1,43 @@
+#include <stdio.h>
+void flush_in() {
+    int ch;
+    do {
+        ch = fgetc(stdin);
+    } while (ch != EOF && ch != '\n');
+}
+    
+
+int main(void){
+
+
+  char nome [20];
+  char sexo;
+  int matricula;
+  double ht, vh, salario;
+
+printf("Digite o nome do funcionario:");
+   scanf("%s", &nome);
+   
+flush_in();
+
+printf("Digite o sexo do funcionario F para feminino ou M para masculino:");
+  scanf("%c", &sexo);
+
+printf("Digite a matricula do funcionario: ");
+  scanf("%d", &matricula);
+
+  printf("Digite as horas trabalhadas: ");
+  scanf("%lf", &ht);
+
+  printf("Digite o valor recebido por hora: ");
+  scanf("%lf", &vh);
+
+  salario = vh * ht;
+
+  printf("\nnome: %s", nome);
+  printf("\nsexo: %c",  sexo);
+  printf("\nmatricula: %d", matricula);
+  printf("\nsalario = %2.lf", salario);
+
+    return 0;
+  }

@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main (){
+    float n1, n2, n3, media;
+    printf("Digite o valor do numero 1: ");
+    scanf("%f", &n1);
+    printf("Digite o valor do numero 2: ");
+    scanf("%f", &n2);
+    printf("Digite valor do numero 3: ");
+    scanf("%f", &n3);
+    media = (n1 + n2 + n3)/2, media;
+    printf("media = %.1f\n",media);
+    return 0;
+}

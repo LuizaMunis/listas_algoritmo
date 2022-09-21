@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(){
+float A, B, media;
+printf("Digite valor da nota A:");
+  scanf("%f", &A);
+  printf("Digite o valor da nota B:");
+  scanf("%f", &B);
+  media = (A*3.5+B*7.5)/11;
+  printf("media = %.2f\n", media);
+  return 0;
+  }
